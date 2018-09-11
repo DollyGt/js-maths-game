@@ -6,12 +6,12 @@
 
 The site allows the kids to exercise their math using addition, subtraction and multiplication. It has been created with children in mind, user friendly and easy to undestand and follow.
 
-<!--A live version can be found [here](https://dollygt.github.io/project2_api/).-->
+A live version can be found [here](https://dollygt.github.io/js-maths-game/).
 
-<!--* Below are screen shots of the site looks in diffrent screen sizes-->
+* Below is a screenshot of how the site looks in diffrent screen sizes
 
-<!--![alt text](https://github.com/DollyGt/project2_api/blob/master/assets/images/movie%20api.png)-->
-<!--![alt text](https://github.com/DollyGt/project2_api/blob/master/assets/images/movie_api.png)-->
+![alt text](https://github.com/DollyGt/js-maths-game/blob/master/images/screenshot1.png)
+
  
 # Technologies Used
 
@@ -22,6 +22,16 @@ The technologies used to achieve this project are:
 2.CSS
 
 3.JavaScript
+
+# Features
+
+1.Addition
+2.Multiplication
+3.Subtraction
+
+# Features left to implement
+
+Division function is yet to be added
 
 # Deployment
 
