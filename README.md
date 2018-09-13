@@ -29,9 +29,7 @@ The technologies used to achieve this project are:
 2.Multiplication
 3.Subtraction
 
-# Features left to implement
 
-Division function is yet to be added
 
 # Deployment
 

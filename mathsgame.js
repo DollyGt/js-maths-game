@@ -18,6 +18,12 @@ function setMultiplicationGame() {
     multiplicationQuiz();  
 }
 
+function setDivisionGame() {
+    answerForm.setAttribute("data-gametype", "division");
+    divisionQuiz();
+}
+
+
 function checkAnswer() {
     let gametype = answerForm.getAttribute("data-gametype")
     if (answerForm["answer"].value ==answerForm["rightAnswer"].value) {
@@ -35,8 +41,15 @@ if (gametype == "addition"){
 }else if (gametype =="multiplication"){
     multiplicationQuiz()
 }
-return false;
+
+ else if (gametype == "division") {
+       divisionQuiz();
+    }
+    return false; 
+    
 }
+
+
 
 function additionQuiz() {
     let num1 = Math.floor(Math.random() *50);
@@ -45,6 +58,9 @@ function additionQuiz() {
  questionBox.textContent = "What is: " + num1 + " + " + num2 + " ?";
  answerForm["rightAnswer"].value = (num1 + num2);
 }
+
+additionQuiz();
+
 function subtractionQuiz() {
     let num1 = Math.floor(Math.random() *30);
     let num2 = Math.floor(Math.random() *20);
@@ -52,6 +68,9 @@ function subtractionQuiz() {
  questionBox.textContent = "What is: " + num1 + " - " + num2 + " ?";
  answerForm["rightAnswer"].value = (num1 - num2);
 }
+
+subtractionQuiz();
+
 function multiplicationQuiz() {
     let num1 = Math.floor(Math.random() *10);
     let num2 = Math.floor(Math.random() *6);
@@ -60,8 +79,23 @@ function multiplicationQuiz() {
  answerForm["rightAnswer"].value = (num1 * num2);
 }
 
+multiplicationQuiz();
+
+function divisionQuiz(){
+    let num2 = Math.round((Math.random() * 50)+1);
+    let num1 = Math.round((Math.random() * 50) + num2);
+    
+    questionBox.textContent = num1+ " / " + num2 + " ?";
+    answerForm["rightAnswer"].value = Math.round(num1 / num2);
+
+}
+divisionQuiz();
 
 
 
 
-additionQuiz();
+
+
+
+
+
